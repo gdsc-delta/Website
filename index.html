@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG On Campus Delta University</title>
+    <style>
+        :root {
+            --google-blue: #4285F4;
+            --google-red: #DB4437;
+            --google-yellow: #F4B400;
+            --google-green: #0F9D58;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--google-blue);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section {
+            flex: 1 1 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .purpose {
+            background-color: var(--google-red);
+            color: white;
+        }
+
+        .vision {
+            background-color: var(--google-green);
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="background.png" alt="GDG Logo" class="logo">
+        <h1>GDG on Campus Delta University</h1>
+    </header>
+    <div class="container">
+        <div class="section purpose">
+            <h2>Our Purpose</h2>
+            <p>At GDG on Campus Delta University, our purpose is to foster a community of tech enthusiasts, developers, and innovators. We aim to provide a platform for learning, collaboration, and growth in the field of technology, with a focus on Google developer technologies.</p>
+        </div>
+        <div class="section vision">
+            <h2>Our Vision</h2>
+            <p>Our vision is to empower students at University to become leaders in technology. We strive to create an inclusive environment where ideas flourish, skills are honed, and connections are made. Through workshops, hackathons, and networking events, we aim to bridge the gap between academic learning and industry requirements.</p>
+        </div>
+    </div>
+</body>
+</html>
